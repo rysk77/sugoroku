@@ -1,0 +1,16 @@
+.rollBtn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+	padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+.rollBtn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
