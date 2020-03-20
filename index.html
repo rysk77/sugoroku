@@ -5,12 +5,126 @@
 	<link rel="stylesheet" href="stylesheet.css">
 	<script src="main.js"></script>
 	<title>Sugoroku</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	<p id="count">1投目</p>
-	<p id="rollBtn" onclick="rollDice()">さいころを振る</p>
-	<div id="result"></div>
-	<p id="position">ゴールまで100マス</p>
-	<p id="goal"></p>
+	<div class="container">
+		<h1><i class="fas fa-dice"></i>すごろく<i class="fas fa-dice"></i></h1>
+		<p id="count">1投目</p>
+		<p id="rollBtn" onclick="rollDice()">さいころを振る</p>
+		<div id="result"></div>
+		<div class="sugorokuArea">
+			<div class="masu">
+				<table>
+					<tr>
+						<td id="m0" class="active">スタート</td>
+						<td id="m1"></td>
+						<td id="m2"></td>
+						<td id="m3"></td>
+						<td id="m4"></td>
+						<td id="m5"></td>
+						<td id="m6"></td>
+						<td id="m7"></td>
+						<td id="m8"></td>
+						<td id="m9"></td>
+						<td id="m10"></td>
+						<td id="m11"></td>
+						<td id="m12"></td>
+						<td id="m13"></td>
+						<td id="m14"></td>
+						<td id="m15"></td>
+						<td id="m16"></td>
+						<td id="m17"></td>
+						<td id="m18"></td>
+						<td id="m19"></td>
+						<td id="m20"></td>
+						<td id="m21"></td>
+						<td id="m22"></td>
+						<td id="m23"></td>
+						<td id="m24"></td>
+						<td id="m25"></td>
+						<td id="m26"></td>
+						<td id="m27"></td>
+						<td id="m28"></td>
+						<td id="m29"></td>
+						<td id="m30"></td>
+						<td id="m31"></td>
+						<td id="m32"></td>
+						<td id="m33"></td>
+						<td id="m34"></td>
+						<td id="m35"></td>
+						<td id="m36"></td>
+						<td id="m37"></td>
+						<td id="m38"></td>
+						<td id="m39"></td>
+						<td id="m40"></td>
+						<td id="m41"></td>
+						<td id="m42"></td>
+						<td id="m43"></td>
+						<td id="m44"></td>
+						<td id="m45"></td>
+						<td id="m46"></td>
+						<td id="m47"></td>
+						<td id="m48"></td>
+						<td id="m49"></td>
+						<td id="m50"></td>
+						<td id="m51"></td>
+						<td id="m52"></td>
+						<td id="m53"></td>
+						<td id="m54"></td>
+						<td id="m55"></td>
+						<td id="m56"></td>
+						<td id="m57"></td>
+						<td id="m58"></td>
+						<td id="m59"></td>
+						<td id="m60"></td>
+						<td id="m61"></td>
+						<td id="m62"></td>
+						<td id="m63"></td>
+						<td id="m64"></td>
+						<td id="m65"></td>
+						<td id="m66"></td>
+						<td id="m67"></td>
+						<td id="m68"></td>
+						<td id="m69"></td>
+						<td id="m70"></td>
+						<td id="m71"></td>
+						<td id="m72"></td>
+						<td id="m73"></td>
+						<td id="m74"></td>
+						<td id="m75"></td>
+						<td id="m76"></td>
+						<td id="m77"></td>
+						<td id="m78"></td>
+						<td id="m79"></td>
+						<td id="m80"></td>
+						<td id="m81"></td>
+						<td id="m82"></td>
+						<td id="m83"></td>
+						<td id="m84"></td>
+						<td id="m85"></td>
+						<td id="m86"></td>
+						<td id="m87"></td>
+						<td id="m88"></td>
+						<td id="m89"></td>
+						<td id="m90"></td>
+						<td id="m91"></td>
+						<td id="m92"></td>
+						<td id="m93"></td>
+						<td id="m94"></td>
+						<td id="m95"></td>
+						<td id="m96"></td>
+						<td id="m97"></td>
+						<td id="m98"></td>
+						<td id="m99"></td>
+						<td id="m100" class="r_none">ゴール</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<p id="position">ゴールまで100マス</p>
+		<p id="goal"></p>
+	</div>
 </body>
 </html>
