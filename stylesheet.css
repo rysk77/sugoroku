@@ -1,3 +1,9 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+/*「サイコロを振る」ボタン関係*/
 #rollBtn {
   padding: 8px 24px;
   color: white;
@@ -13,4 +19,26 @@
   position: relative;
   top: 7px;
   box-shadow: none;
+}
+
+/*すごろくのマス目関係*/
+.sugorokuArea{
+  overflow: hidden;
+}
+.masu{
+  width: 100%;
+  overflow-x: scroll;
+}
+table{
+  width: 10500px;
+  border-spacing: 0;
+}
+td{
+  background-color: green;
+  border: 1px solid black;
+  width:100px;
+  height: 100px;
+}
+.active{
+  background-color: red;
 }
