@@ -34,12 +34,17 @@ var result = function(){
 }
 //サイコロを降った際に行われる処理
 var rollDice =function(){
-   result();
-　　//出目に応じて条件分岐
-　　switch(diceNum){
-	 		case 1:
+
+	for(var i = 0; i<15; i++){
+		setTimeout(shuffle,i*50);
+	}
+	setTimeout(function () {
+		result();
+ 　　//出目に応じて条件分岐
+ 　　switch(diceNum){
+			case 1:
 				setTimeout(move,500);
-	 			break;
+				break;
 
 			case 2:
 				for (  var i = 0;  i < 2;  i++  ) {
@@ -70,17 +75,19 @@ var rollDice =function(){
 					setTimeout(move,i*500);
 					}
 				break;
-   }
-　　//カウント
+		}
+ 　　//カウント
 	 countVal++;
- 	 $id('count').innerHTML = countVal + "投目";
+		 $id('count').innerHTML = countVal + "投目";
 	 leftVal = leftVal - diceNum;
 	 $id('position').innerHTML = "ゴールまで"+leftVal+"マス";
-　　
+ 　　
 	 //ゴール判定
 	 if(leftVal<=0){
 		 $id('goal').innerHTML = "ゴールです！おめでとうございます"
 		 $id('position').innerHTML = "";
 		 $id('rollBtn').onclick = "";
-}
+ }
+	}, 800);
+
 }
