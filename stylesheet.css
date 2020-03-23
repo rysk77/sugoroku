@@ -25,7 +25,7 @@
 .sugorokuArea{
   overflow: hidden;
 }
-.masu{
+#board{
   width: 100%;
   overflow-x: scroll;
 }
@@ -42,4 +42,3 @@ td{
 .active{
   background-color: red;
 }
-
