@@ -9,14 +9,14 @@ var masuId = "m" + 0;
 
 //駒を進める　
 var move = function(){
-		$id(masuId).classList.remove("active")
+		$id(masuId).classList.remove("active");
 		sum++;
 		if(sum>=100){
 			masuId="m"+100;
 		}else{
 			masuId = "m" + sum;
 		}
-		$id(masuId).classList.add("active")
+		$id(masuId).classList.add("active");
 }
 
 //サイコロを振る演出
@@ -32,12 +32,21 @@ var result = function(){
 	diceFig = diceNum + ".png";
 	$id('result').innerHTML = "<img src='" + diceFig + "' width='64' height='64'>"
 }
+//スクロール
+var scroll = function(){
+  $id('board').scrollTo(0,0);
+  $id('board').scrollLeft += sum*104;
+
+}
+
 //サイコロを降った際に行われる処理
 var rollDice =function(){
-
+	//1つ目
+	$id("rollBtn").disabled = "true";
 	for(var i = 0; i<15; i++){
 		setTimeout(shuffle,i*50);
 	}
+	//2つ目　800ms
 	setTimeout(function () {
 		result();
  　　//出目に応じて条件分岐
@@ -76,6 +85,8 @@ var rollDice =function(){
 					}
 				break;
 		}
+		//3つ目　3800ms
+		setTimeout(function () {
  　　//カウント
 	 countVal++;
 		 $id('count').innerHTML = countVal + "投目";
@@ -88,6 +99,9 @@ var rollDice =function(){
 		 $id('position').innerHTML = "";
 		 $id('rollBtn').onclick = "";
  }
+ scroll();
+ $id("rollBtn").disabled = "";
+}, 3000);
 	}, 800);
 
 }
