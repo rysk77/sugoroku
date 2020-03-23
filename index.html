@@ -2,19 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Sugoroku</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="stylesheet.css">
 	<script src="main.js"></script>
+	<title>Sugoroku</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
 		<h1><i class="fas fa-dice"></i>すごろく<i class="fas fa-dice"></i></h1>
 		<p id="count">1投目</p>
-		<p id="rollBtn" onclick="rollDice()">さいころを振る</p>
+		<p><input type="button" id="rollBtn" value="さいころを振る" onclick="rollDice()"></p>
 		<div id="result"></div>
 		<div class="sugorokuArea">
-			<div class="masu">
+			<div id="board">
 				<table>
 					<tr>
 						<td id="m0" class="active">スタート</td>
@@ -122,6 +122,7 @@
 				</table>
 			</div>
 		</div>
+
 		<p id="position">ゴールまで100マス</p>
 		<p id="goal"></p>
 	</div>
