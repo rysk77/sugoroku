@@ -10,10 +10,16 @@
 <body>
 	<div class="container">
 		<h1><i class="fas fa-dice"></i>すごろく<i class="fas fa-dice"></i></h1>
-		<p id="count">1投目</p>
-		<p><input type="button" id="rollBtn" value="さいころを振る" onclick="rollDice()"></p>
-		<div id="result"></div>
-		<div class="sugorokuArea">
+		<div class="upperPart">
+			<div class="information">
+				<p><input type="button" id="rollBtn" value="さいころを振る" onclick="rollDice()"></p>
+				<p id="count">1投目</p>
+				<p id="position">ゴールまで100マス</p>
+				<p id="goal"></p>
+		  </div>
+			<div id="result"></div>
+		</div>
+	  	<div class="sugorokuArea">
 			<div id="board">
 				<table>
 					<tr>
@@ -123,8 +129,6 @@
 			</div>
 		</div>
 
-		<p id="position">ゴールまで100マス</p>
-		<p id="goal"></p>
 	</div>
 </body>
 </html>
