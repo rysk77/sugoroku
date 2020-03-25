@@ -25,11 +25,12 @@
 }
 
 .upperPart{
-  margin: 0 auto;;
+  margin: 0 auto;
   width: 50%;
   display: flex;
 }
 .information{
+  margin: 0 auto;
   width:50%;
 }
 #result{
@@ -49,10 +50,13 @@ table{
   border-spacing: 0;
 }
 td{
-  background-color: green;
+  background-color: #61C359;
   border: 1px solid black;
   width:100px;
   height: 100px;
+}
+.event{
+  background-color: #FcAA00;
 }
 .active{
   background-color: red;
