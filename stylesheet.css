@@ -3,6 +3,23 @@
   margin: 0 auto;
   text-align: center;
 }
+.btn{
+  padding: 0 10px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+	padding: 15px 40px;
+  background-color: #61C359;
+  cursor: pointer;
+  box-shadow: 2px 7px 4px gray;
+  font-size: 20px;
+}
+.Btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
 /*「サイコロを振る」ボタン関係*/
 #rollBtn {
   padding: 0 10px;
@@ -11,9 +28,9 @@
   opacity: 0.8;
   border-radius: 4px;
 	padding: 15px 40px;
-  background-color: #5dca88;
+  background-color: red;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  box-shadow: 2px 7px 4px gray;
   width: 80%;
   height: auto;
   font-size: 20px;
@@ -23,7 +40,6 @@
   top: 7px;
   box-shadow: none;
 }
-
 .upperPart{
   margin: 0 auto;
   width: 50%;
@@ -58,6 +74,18 @@ td{
 .event{
   background-color: #FcAA00;
 }
-.active{
+.red{
   background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.silver{
+  background-color: silver;
+}
+.purple{
+  background-color: purple;
+}
+.none{
+  display: none;
 }
