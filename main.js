@@ -3,14 +3,14 @@ var player;//プレイ人数
 //プレイ人数に応じた分岐
 var one = function(){
 	$id("sugoroku").classList.remove("none")
-  $id('btnList').classList.add("none");
+  $id('choise').classList.add("none");
   player=1;
   $id('m0').classList.add("red");
 }
 
 var two = function(){
   $id("sugoroku").classList.remove("none")
-  $id('btnList').classList.add("none");
+  $id('choise').classList.add("none");
   player=2;
   $id('m0').classList.add("red");
   $id('m0').classList.add("blue");
@@ -18,7 +18,7 @@ var two = function(){
 
 var three = function(){
   $id("sugoroku").classList.remove("none")
-  $id('btnList').classList.add("none");
+  $id('choise').classList.add("none");
   player=3;
   $id('m0').classList.add("red");
   $id('m0').classList.add("blue");
@@ -27,7 +27,7 @@ var three = function(){
 
 var four = function(){
   $id("sugoroku").classList.remove("none")
-  $id('btnList').classList.add("none");
+  $id('choise').classList.add("none");
   player=4;
   $id('m0').classList.add("red");
   $id('m0').classList.add("blue");
