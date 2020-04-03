@@ -25,7 +25,7 @@
 				sum2 = 0;
 				masuId2="m"+0;
 			}else{
-				masuId2 = "m" + sum;
+				masuId2 = "m" + sum2;
 			}
 			$id(masuId2).classList.add("blue");
 	}
