@@ -172,7 +172,7 @@ var events = function(){
 					masuId = "m" + sum;
 					masuId4 = "m" + sum4;
 					$id(masuId).classList.add("red");
-					$id(masuId3).classList.add("purple");
+					$id(masuId4).classList.add("purple");
 					break;
 					}
 		break;
