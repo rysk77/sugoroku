@@ -82,6 +82,7 @@
 
 	//イベント
 	var events2 = function(){
+    //入れ替えイベント
     if($id(masuId2).classList.contains('exchange') == true ){
       var change1;
    	 var change2;
