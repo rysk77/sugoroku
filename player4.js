@@ -25,7 +25,7 @@ var back4 = function(){
       sum4 = 0;
       masuId4="m"+0;
     }else{
-      masuId4 = "m" + sum;
+      masuId4 = "m" + sum4;
     }
     $id(masuId4).classList.add("purple");
 }
