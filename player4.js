@@ -117,7 +117,7 @@ var events4 = function(){
           break;
           case 3:
           $id('eventText').innerHTML = "イベント発生！ player3と入れ替え";
-          $id(masuId2).classList.remove("silver");
+          $id(masuId3).classList.remove("silver");
           $id(masuId4).classList.remove("purple");
           change1 = sum3;
           change2 = sum4;
