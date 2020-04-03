@@ -25,7 +25,7 @@ var back3 = function(){
       sum3 = 0;
       masuId3="m"+0;
     }else{
-      masuId3 = "m" + sum;
+      masuId3 = "m" + sum3;
     }
     $id(masuId3).classList.add("silver");
 }
