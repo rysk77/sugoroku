@@ -1,4 +1,5 @@
-var player;//プレイ人数
+var player =0;//プレイ人数
+var person;//プレイしている人
 
 //プレイ人数に応じた分岐
 var one = function(){
