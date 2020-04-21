@@ -4,7 +4,7 @@ var leftVal = 100; //残りのマス
 var diceFig; //サイコロの図を決定
 var diceNum; //サイコロの価
 var sum = 0; //出目の合計
-var masuId = "m" + 0;
+var masuId = "m"+0;
 
 //駒を進める　
 var move = function(){
@@ -100,11 +100,11 @@ var events = function(){
 		masuId2 = "m" + sum2;
 		$id(masuId).classList.add("red");
 		$id(masuId2).classList.add("blue");
- 		break;
-		case 3:
-			var exchangeplayer = Math.floor(Math.random() * 2) + 1;
-			switch (exchangeplayer) {
-					case 1:
+ 	break;
+	case 3:
+		var exchangeplayer = Math.floor(Math.random() * 2) + 1;
+		switch (exchangeplayer) {
+				case 1:
 					$id('eventText').innerHTML = "イベント発生！ player2と入れ替え";
 					$id(masuId).classList.remove("red");
 					$id(masuId2).classList.remove("blue");
@@ -116,8 +116,8 @@ var events = function(){
 					masuId2 = "m" + sum2;
 					$id(masuId).classList.add("red");
 					$id(masuId2).classList.add("blue");
-					break;
-					case 2:
+				break;
+				case 2:
 					$id('eventText').innerHTML = "イベント発生！ player3と入れ替え";
 					$id(masuId).classList.remove("red");
 					$id(masuId3).classList.remove("silver");
@@ -129,13 +129,13 @@ var events = function(){
 					masuId3 = "m" + sum3;
 					$id(masuId).classList.add("red");
 					$id(masuId3).classList.add("silver");
-					break;
-					}
+				break;
+			}
 	 	break;
 		case 4:
 			var exchangeplayer = Math.floor(Math.random() * 3) + 1;
 			switch (exchangeplayer) {
-					case 1:
+				case 1:
 					$id('eventText').innerHTML = "イベント発生！ player2と入れ替え";
 					$id(masuId).classList.remove("red");
 					$id(masuId2).classList.remove("blue");
@@ -147,8 +147,8 @@ var events = function(){
 					masuId2 = "m" + sum2;
 					$id(masuId).classList.add("red");
 					$id(masuId2).classList.add("blue");
-					break;
-					case 2:
+				break;
+				case 2:
 					$id('eventText').innerHTML = "イベント発生！ player3と入れ替え";
 					$id(masuId).classList.remove("red");
 					$id(masuId3).classList.remove("silver");
@@ -160,8 +160,8 @@ var events = function(){
 					masuId3 = "m" + sum3;
 					$id(masuId).classList.add("red");
 					$id(masuId3).classList.add("silver");
-					break;
-					case 3:
+				break;
+				case 3:
 					$id('eventText').innerHTML = "イベント発生！ player4と入れ替え";
 					$id(masuId).classList.remove("red");
 					$id(masuId4).classList.remove("purple");
@@ -173,8 +173,8 @@ var events = function(){
 					masuId4 = "m" + sum4;
 					$id(masuId).classList.add("red");
 					$id(masuId4).classList.add("purple");
-					break;
-					}
+				break;
+			}
 		break;
  }
  }else{
@@ -228,19 +228,19 @@ var events = function(){
 			switch(eventNum){
 					case 1:
 						back();
-						break;
+					break;
 
 					case 2:
 						for (  var i = 0;  i < 2;  i++  ) {
 							back();
-							}
-						break;
+						}
+					break;
 
 					case 3:
 						for (  var i = 0;  i < 3;  i++  ) {
 							back();
-							}
-						break;
+						}
+					break;
 
 					case 4:
 						for (  var i = 0;  i < 4;  i++  ) {
@@ -282,6 +282,7 @@ var turn = function(){
 	 $id('eventText').innerHTML = "";
 	 $id("rollBtn").style.backgroundColor = 'blue';
 	 scroll2();
+	 person = "2番目";
 	}
 }
 
@@ -309,6 +310,7 @@ var rollDiceRed =function(){
 		 $id('goal').innerHTML = "ゴールです！おめでとうございます"
 		 $id('position').innerHTML = "";
 		 $id('rollBtn').onclick = "";
+		 player=0;
  }
  setTimeout(function () {
  if( $id(masuId).classList.contains('event') == true){
