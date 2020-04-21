@@ -20,6 +20,13 @@
   top: 7px;
   box-shadow: none;
 }
+#reStart{
+  width: 33%;
+  background-color: #334DCC;
+}
+#sugoroku{
+  text-align: center;
+}
 /*「サイコロを振る」ボタン関係*/
 #rollBtn {
   padding: 0 10px;
@@ -88,4 +95,8 @@ td{
 }
 .none{
   display: none;
+}
+
+form{
+  color: black;
 }
