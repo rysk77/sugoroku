@@ -3,7 +3,7 @@ var leftVal3 = 100; //残りのマス
 var diceFig; //サイコロの図を決定
 var diceNum3; //サイコロの価
 var sum3 = 0; //出目の合計
-var masuId3 = "m" + 0;
+var masuId3 = "m"+0;
 
 //駒を進める　
 var move3 = function(){
@@ -259,6 +259,7 @@ var turn3 = function(){
     $id('eventText').innerHTML = "";
     $id("rollBtn").style.backgroundColor = 'red';
     scroll();
+    person = "1番目";
       break;
 
       case 4:
@@ -269,6 +270,7 @@ var turn3 = function(){
       $id('eventText').innerHTML = "";
       $id("rollBtn").style.backgroundColor = 'purple';
       scroll4();
+      person = "4番目";
         break;
   }
 }
@@ -297,6 +299,7 @@ setTimeout(function () {
    $id('goal').innerHTML = "ゴールです！おめでとうございます"
    $id('position').innerHTML = "";
    $id('rollBtn').onclick = "";
+   player = 0;
 }
 setTimeout(function () {
 if( $id(masuId3).classList.contains('event') == true){
