@@ -3,7 +3,7 @@ var leftVal4 = 100; //残りのマス
 var diceFig; //サイコロの図を決定
 var diceNum4; //サイコロの価
 var sum4 = 0; //出目の合計
-var masuId4 = "m" + 0;
+var masuId4 = "m"+0;
 
 //駒を進める　
 var move4 = function(){
@@ -227,7 +227,9 @@ $id('position').innerHTML = "ゴールまで"+leftVal+"マス";
 $id('eventText').innerHTML = "";
 $id("rollBtn").style.backgroundColor = 'red';
 scroll();
+person = "1番目";
 }
+
 //サイコロを降った際に行われる処理
 var rollDicePurple =function(){
 //1つ目
@@ -252,6 +254,7 @@ setTimeout(function () {
    $id('goal').innerHTML = "ゴールです！おめでとうございます"
    $id('position').innerHTML = "";
    $id('rollBtn').onclick = "";
+   player = 0;
 }
 setTimeout(function () {
 if( $id(masuId4).classList.contains('event') == true){
